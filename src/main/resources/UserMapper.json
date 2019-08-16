@@ -1,0 +1,22 @@
+[
+  {
+    "id": "insert",
+    "type": "insert",
+    "sql": "insert into user(username, password) values(#:username#, #:password#)"
+  },
+  {
+    "id": "deleteById",
+    "type": "delete",
+    "sql": "delete from user where id = #:id#"
+  },
+  {
+    "id": "updatePassword",
+    "type": "update",
+    "sql": "update user set password = #:password# where id = #:id#"
+  },
+  {
+    "id": "getById",
+    "type": "select",
+    "sql": "select id, username, password from user where id = #:id#"
+  }
+]
